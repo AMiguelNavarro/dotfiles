@@ -7,3 +7,7 @@ eval "$(starship init zsh)"
 
 # zoxide: cd que aprende (usa z <nombre> para saltar a una carpeta)
 eval "$(zoxide init zsh)"
+
+# fnm: gestor de versiones de Node
+export PATH="$HOME/.local/share/fnm:$PATH"
+eval "$(fnm env --use-on-cd --shell zsh)"
