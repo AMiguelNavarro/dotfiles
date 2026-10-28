@@ -1,0 +1,19 @@
+# Prompt tipo bash: usuario@host:directorio$
+format = "$username$hostname:$directory$character"
+
+[username]
+show_always = true
+style_user = "bold green"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "bold green"
+format = "[@$hostname]($style)"
+
+[directory]
+style = "bold blue"
+
+[character]
+success_symbol = "[\\$](bold white) "
+error_symbol = "[\\$](bold red) "
