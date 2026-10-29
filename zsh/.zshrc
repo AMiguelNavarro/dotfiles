@@ -1,4 +1,6 @@
-# Created by newuser for 5.9
+# PATH: binarios de usuario (Claude Code) y OpenCode
+export PATH="$HOME/.local/bin:$HOME/.opencode/bin:$PATH"
+
 eval "$(starship init zsh)"
 
 # fzf: Ctrl+R historial, Ctrl+T ficheros, Alt+C directorios
@@ -17,13 +19,9 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # zsh-syntax-highlighting debe ir siempre el último
 [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PATH="$HOME/.local/bin:$PATH"
-# opencode
-export PATH=/home/mike/.opencode/bin:$PATH
+# Secretos (claves de API), fuera del repo
+[ -f ~/.config/secrets/env.sh ] && source ~/.config/secrets/env.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-[ -f ~/.config/secrets/env.sh ] && source ~/.config/secrets/env.sh
-

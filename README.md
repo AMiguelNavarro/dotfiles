@@ -57,3 +57,7 @@ Repositorio de configuración para WSL2 (Ubuntu), pensado para reproducirse en u
 |  | tree-sitter-cli |
 |  | Claude Code |
 |  | OpenCode |
+
+# Enlaces de interes
+
+- Montar entorno de desarrollo: [setup.md](docs/setup.md)
