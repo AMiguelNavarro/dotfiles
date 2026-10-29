@@ -21,3 +21,6 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="$HOME/.local/bin:$PATH"
+
+# opencode
+export PATH=/home/mike/.opencode/bin:$PATH
