@@ -61,3 +61,4 @@ Repositorio de configuración para WSL2 (Ubuntu), pensado para reproducirse en u
 # Enlaces de interes
 
 - Montar entorno de desarrollo: [setup.md](docs/setup.md)
+- Probar install.sh en un WSL aislado: [how-to-perform-isolated-test.md](docs/how-to-perform-isolated-test.md)
