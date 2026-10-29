@@ -17,10 +17,13 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # zsh-syntax-highlighting debe ir siempre el último
 [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export PATH="$HOME/.local/bin:$PATH"
+# opencode
+export PATH=/home/mike/.opencode/bin:$PATH
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-export PATH="$HOME/.local/bin:$PATH"
 
-# opencode
-export PATH=/home/mike/.opencode/bin:$PATH
+[ -f ~/.config/secrets/env.sh ] && source ~/.config/secrets/env.sh
+
